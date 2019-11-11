@@ -1,6 +1,37 @@
 /* GLOBAL */
-div {
-    border: 1px solid red;
+body {
+    background-image: url("../Images/ripples.png");
+}
+header {
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+.logo {
+    background-color: #4aaaa5;
+}
+.nav-links {
+    padding-right:0;
+}
+.main-content {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+}
+.content-padding {
+    padding: 0 40px;
+}
+footer {
+    background-color: #666;
+    border-top: 8px solid #4aaaa5;
+    clear:both;
+    box-sizing: border-box;
+    height: 58px;
+}
+.copyright {
+    color: white;
+    font-size: 10px;
+    line-height: 1;
 }
 
 /* About page */
