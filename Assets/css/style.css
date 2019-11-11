@@ -1,0 +1,17 @@
+/* GLOBAL */
+div {
+    border: 1px solid red;
+}
+
+/* About page */
+.headshot {
+    float:left;
+    width:160px;
+    margin: 0 35px 15px 0;
+}
+@media screen and (max-width:575px) {
+    .headshot {
+        width:100%;
+        margin: 15px 0;
+    }
+}
