@@ -9,17 +9,47 @@ header {
 .logo {
     background-color: #4aaaa5;
 }
+h1 {
+    font-family: "Georgia", Times, "Times New Roman", serif;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
 .nav-links {
     padding-right:0;
+    justify-content: flex-end;
+}
+.nav-links a {
+    padding: 0 15px;
+    margin: 15px 0;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777;
+    text-decoration: none;
+    line-height:1;
+}
+.nav-links a:last-of-type {
+    padding: 0 0 0 15px;
+}
+.middle-link {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 .main-content {
     background-color: white;
-    margin: 20px auto;
-    padding: 20px 20px;
+    margin: 20px auto 78px;
+    padding: 20px 30px;
     border: 1px solid #ddd;
 }
-.content-padding {
-    padding: 0 40px;
+h2 {
+    font-family: "Georgia", Times, "Times New Roman", serif;
+    color: #4aaaa5;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: bold;
+    display:block;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 25px;
 }
 footer {
     background-color: #666;
@@ -41,6 +71,9 @@ footer {
     margin: 0 35px 15px 0;
 }
 @media screen and (max-width:575px) {
+    .nav-links {
+        justify-content: center;
+    }
     .headshot {
         width:100%;
         margin: 15px 0;
