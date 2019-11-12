@@ -2,6 +2,9 @@
 body {
     background-image: url("../Images/ripples.png");
 }
+.wrapper {
+    min-height: calc(100vh - 58px);
+}
 header {
     background-color: white;
     border-bottom: 2px solid #ccc;
@@ -37,7 +40,7 @@ h1 {
 }
 .main-content {
     background-color: white;
-    margin: 20px auto 78px;
+    margin: 20px auto;
     padding: 20px 30px;
     border: 1px solid #ddd;
 }
@@ -57,11 +60,13 @@ footer {
     clear:both;
     box-sizing: border-box;
     height: 58px;
+    overflow: hidden;
 }
 .copyright {
     color: white;
     font-size: 10px;
     line-height: 1;
+    padding-top:20px;
 }
 
 /* About page */
@@ -73,6 +78,10 @@ footer {
 @media screen and (max-width:575px) {
     .nav-links {
         justify-content: center;
+    }
+    .main-content {
+        /* margin: 20px; */
+        width: calc(100vw - 40px);
     }
     .headshot {
         width:100%;
