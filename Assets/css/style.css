@@ -5,19 +5,30 @@ body {
 .wrapper {
     min-height: calc(100vh - 58px);
 }
-header {
-    background-color: white;
+nav {
     border-bottom: 2px solid #ccc;
 }
-.logo {
-    background-color: #4aaaa5;
+.navbar {
+    padding:0;
 }
-h1 {
+nav .container {
+    padding: 0;
+}
+nav .row {
+    flex-grow: 1;
+    margin:0;
+}
+.logo {
+    padding:0;
+}
+.navbar-brand {
     font-family: "Georgia", Times, "Times New Roman", serif;
     color: white;
-    padding: 15px;
+    margin:0;
+    padding: 15px 30px;
     font-size: 30px;
     font-weight: bold;
+    background-color: #4aaaa5;
 }
 .nav-links {
     padding-right:0;
@@ -75,12 +86,21 @@ footer {
     width:160px;
     margin: 0 35px 15px 0;
 }
+
+/* Media queries */
 @media screen and (max-width:575px) {
+    .logo {
+        background-color: #4aaaa5;
+        text-align:center;
+    }
     .nav-links {
         justify-content: center;
+        padding:0;
     }
+    .nav-links a:last-of-type {
+        padding: 0 15px;
+    }    
     .main-content {
-        /* margin: 20px; */
         width: calc(100vw - 40px);
     }
     .headshot {
