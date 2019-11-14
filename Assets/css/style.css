@@ -132,6 +132,36 @@ footer {
     padding: 10px;
 }
 
+/* Contact page */
+#full-name,
+#email {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.clickme {
+  border: none;
+  background-color: #4aaaa5;
+  padding: 8px 20px;
+  color: white;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+form {
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: #777;
+  line-height: 1.75;
+}
+
 /* Media queries */
 @media screen and (max-width:575px) {
     .logo {
